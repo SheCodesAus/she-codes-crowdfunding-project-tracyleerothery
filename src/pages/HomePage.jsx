@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 
 // Compnents 
-import { allProjects } from "../data";
+import {allProjects} from "../data";
 
 // Data
 import ProjectCard from "../components/ProjectCard/ProjectCard";
