@@ -1,15 +1,23 @@
 import React from "react";
 
-// Data
+
+// Compnents 
 import { allProjects } from "../data";
+
+// Data
+import ProjectCard from "../components/ProjectCard/ProjectCard";
+
+
 
 function HomePage() {
     return (
-        <div>
-            {allProjects.map((projectData, key) => {
-                return <div key={key}>{projectData.title}</div>;
-            })}
-        </div>
+        <div id="project-list">
+            {allProjects.map((projectData => {
+                return<ProjectCard
+                key={'project-$[projectData.id}'}
+                projectData={projectData}
+            />}))}
+    </div>
     );
 }
 
