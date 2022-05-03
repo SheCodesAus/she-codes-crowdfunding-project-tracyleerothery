@@ -11,6 +11,7 @@ import Nav from "./components/Nav/Nav";
 // pages
 import HomePage from "./pages/HomePage";
 import ProjectPage from "./pages/ProjectPage";
+import LoginPage from "./pages/LoginPage";
 
 
 function App() {
@@ -20,8 +21,9 @@ function App() {
         <Nav />
 
         <Routes>
-          <Route path="/project/:id" element={<ProjectPage />} />
           <Route path="/" element={<HomePage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/project/:id" element={<ProjectPage />} />
         </Routes>
       </div>
     </Router>
