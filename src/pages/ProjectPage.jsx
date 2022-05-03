@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 //components
+import PledgeForm from "../components/PledgeForm/PledgeForm";
 import ProjectOwner from "../components/ProjectOwner/ProjectOwner";
+
+
 function ProjectPage() {
+    //state
     const [projectData, setProjectData] = useState({pledges: [] });
+    //hooks
     const { id } = useParams();
     useEffect(() => {
         fetch(`${process.env.REACT_APP_API_URL}projects/${id}`)
@@ -44,6 +49,7 @@ function ProjectPage() {
                 );
             })}
             </ul>
+            <PledgeForm projectId={id} />
         </div>
           
         </>
