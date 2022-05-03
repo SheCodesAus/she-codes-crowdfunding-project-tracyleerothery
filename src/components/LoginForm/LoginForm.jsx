@@ -10,7 +10,7 @@ function LoginForm() {
 
   // Hooks
   const navigate = useNavigate();
-  
+
   // Actions and Helpers
   const handleChange = (event) => {
     const { id, value } = event.target;
@@ -20,6 +20,31 @@ function LoginForm() {
     }));
   };
 
+//   THINKIFIC VERSION:
+//   const postData = async () => {
+//     const response = await fetch(
+//       `${process.env.REACT_APP_API_URL}api-token-auth/`,
+//       {
+//         method: "post",
+//         headers: {
+//           "Content-Type": "application/json",
+//         },
+//         body: JSON.stringify(credentials),
+//       }
+//     );
+//     return response.json();
+//   };
+
+//   const handleSubmit = (event) => {
+//     event.preventDefault();
+//     if (credentials.username && credentials.password) {
+//       postData().then((response) => {
+//         window.localStorage.setItem("token", response.token);
+//       });
+//     }
+//   };
+
+// ALEX'S VERSION:
   const handleSubmit = async (event) => {
     event.preventDefault();
     if (credentials.username && credentials.password) {
@@ -35,9 +60,9 @@ function LoginForm() {
           }
         );
         const data = await response.json();
-        console.log("data", data);
+        console.log(data)
         window.localStorage.setItem("token", data.token);
-        window.localStorage.setItem("username", credentials.username);
+        // THIS IS HOW YOU NAVIGATE AUTOMATICALLY
         navigate("/");
       } catch (err) {
         console.log(err);
