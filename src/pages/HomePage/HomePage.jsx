@@ -34,7 +34,7 @@ function HomePage() {
           
     <div class="hero-image">
     <div class="hero-text">
-      <h1>All dogs</h1><p>
+      <h1>All Pets</h1><p>
                     <button><Link to="/projects/create/">POST NEW PROJECT</Link></button>
                 </p>
       <p>Helping every good boy and girl find a new home. Like Neopets but you get to help real animlas.</p>
@@ -43,6 +43,7 @@ function HomePage() {
                 
 
             </div>
+            
 
             <div id="project-list">
                 {projectList.map((projectData, key) => {
