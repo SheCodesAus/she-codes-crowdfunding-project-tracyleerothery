@@ -1,11 +1,21 @@
 import React from "react";
-
 import { Link } from "react-router-dom";
 
+// Styles
+import "./Nav.css";
+
+
 function Nav() {
-    return (<nav><Link to="/">HomePage</Link>
-    <Link to="/projects/">ProjectPage</Link>
-    <Link to="/login">Login</Link>
-    </nav>);}
+    return (
+        <section className="navbar">
+            <nav className="left-menu">
+                <Link className="button" variantcolor="#fff" to="/">Home </Link>
+                <Link className="button" to="/projects/">Projects </Link>
+                <Link className="button" to="/login/">Log in </Link>
+    
+            </nav>
+        </section>
+    );
+}
 
 export default Nav;
