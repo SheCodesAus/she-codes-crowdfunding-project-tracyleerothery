@@ -32,8 +32,8 @@ function HomePage() {
 
         <div id="welcome-text">    
           
-    <div class="hero-image">
-    <div class="hero-text">
+    <div className="hero-image">
+    <div className="hero-text">
       <h1>All Pets</h1><p>
                     <button><Link to="/projects/create/">POST NEW PROJECT</Link></button>
                 </p>
