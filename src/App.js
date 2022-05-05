@@ -1,18 +1,26 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-//Styles
-import "./App.css";
+
 
 // Components 
 
 import Nav from "./components/Nav/Nav";
 
 // pages
-import HomePage from "./pages/HomePage";
-import ProjectPage from "./pages/ProjectPage";
-import LoginPage from "./pages/LoginPage";
+// import HomePage from "./pages/HomePage/HomePage";
+// import ProjectPage from "./pages/ProjectPage/ProjectPage";
+// import LoginPage from "./pages/LoginPage/LoginPage";
+// import PledgePage from "./pages/PledgePage/PledgePage";
 
+import HomePage from "./pages/HomePage/HomePage";
+import ProjectPage from "./pages/ProjectPage/ProjectPage";
+import LoginPage from "./pages/LoginPage/LoginPage";
+import PledgePage from "./pages/PledgePage/PledgePage";
+import ProjectFormPage from "./pages/ProjectFormPage/ProjectFormPage";
+
+//Styles
+import "./App.css";
 
 function App() {
   return (
@@ -21,9 +29,16 @@ function App() {
         <Nav />
 
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          {/* <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/project/:id" element={<ProjectPage />} />
+          <Route path="/pledges/:id" element={<PledgePage />} /> */}
+
+          <Route path="/projects/create" element={<ProjectFormPage />} />
+          <Route path="/project/:id" element={<ProjectPage />} />
+          <Route path="/pledges/:id" element={<PledgePage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/" element={<HomePage />} />
         </Routes>
       </div>
     </Router>
