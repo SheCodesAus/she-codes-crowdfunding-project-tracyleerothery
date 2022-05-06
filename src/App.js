@@ -8,7 +8,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import ProjectPage from "./pages/ProjectPage/ProjectPage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import PledgePage from "./pages/PledgePage/PledgePage";
-import RegisterPage from "./pages/RegistrationPage/RegistrationPage";
+import RegisterPage from "./pages/RegisterPage/RegisterPage";
 import ProjectFormPage from "./pages/ProjectFormPage/ProjectFormPage";
 
 //Styles
@@ -25,7 +25,7 @@ function App() {
           <Route path="/project/:id" element={<ProjectPage />} />
           <Route path="/pledges/:id" element={<PledgePage />} />
           <Route path="/login" element={<LoginPage />} />
-          <Route path="/users/register/" element={<RegisterPage />} />
+          <Route path="/register/" element={<RegisterPage />} />
           <Route path="/" element={<HomePage />} />
         </Routes>
       </div>
