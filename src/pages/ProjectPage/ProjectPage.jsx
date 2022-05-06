@@ -62,14 +62,14 @@ function ProjectPage() {
     <div className="project-wrapper">
         <div id="project-title-and-owner">
             <h2>{projectData.title}</h2> 
-            <h3>Invented by: <ProjectOwner owner={projectData.owner} /> on {projectData.date_created}</h3>
+            <h3>Created by: <ProjectOwner owner={projectData.owner} /> on {projectData.date_created}</h3>
         </div>
         
         <div className="project-details">
                 <img className="project-img" src={projectData.image} alt="project img"/>
                 <ul>
                     <li>{projectData.description}</li>
-                    <li>Invention Category: {projectData.category}</li>
+                    <li>Category: {projectData.category}</li>
                     <li>Donation Goal: ${projectData.goal}</li>
                     <li>Closing Date: {projectData.closing_date}</li>
                 </ul>
@@ -77,7 +77,7 @@ function ProjectPage() {
 >
 
         <div>
-            <button><Link to={`/pledges/${id}`}>Pledge Inventi-Cents Here!</Link></button>
+            <button><Link to={`/pledges/${id}`}>Help a pet here!</Link></button>
         </div>
 
         
