@@ -129,7 +129,7 @@ function RegisterForm() {
                 />
             </div>
             <button type="submit" onClick={handleSubmit}>
-                Login
+                Register
             </button>
         </form>
     );

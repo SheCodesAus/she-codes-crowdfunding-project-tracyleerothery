@@ -8,7 +8,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import ProjectPage from "./pages/ProjectPage/ProjectPage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import PledgePage from "./pages/PledgePage/PledgePage";
-import RegisterPage from "./pages/RegisterPage";
+import RegisterPage from "./pages/RegistrationPage/RegistrationPage";
 import ProjectFormPage from "./pages/ProjectFormPage/ProjectFormPage";
 
 //Styles
