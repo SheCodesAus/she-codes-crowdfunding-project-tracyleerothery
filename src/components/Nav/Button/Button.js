@@ -4,13 +4,13 @@ import React from "react";
 import './Button.css'
 
 const STYLES = [
-    'btn-primary',
-    'btn-outline'
+    'navbar',
+    'navbar'
 ]
 
 const SIZES = [
-    'btn-medium',
-    'btn-large'
+    'navbar',
+    'navbar'
 ]
 
 export const Button = ({

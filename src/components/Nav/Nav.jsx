@@ -32,7 +32,7 @@ function Nav() {
         const isUserLoggedIn = !!window.localStorage.getItem("token");
         // console.log("isuserloggedin", isUserLoggedIn)
 
-        const className = "buttonclassname";
+        const className = "navbar";
 
         const loginButton = <Button className={className} onClick={navigateToLogin}>Login</Button>;
         const signOutButton = <Button className={className} onClick={handleSignOut}>Sign Out1</Button>
@@ -54,19 +54,13 @@ function Nav() {
         <nav className="navbar">
             
             <div className="menu-icon" onClick={handleClick}>
-                <li className={
-                    // Hamburger Menu
-                    isMenuExpanded 
-                    ? 'fas fa-times' 
-                    : 'fas fa-bars'}>
-                </li>
             </div>
 
             <ul className={
                 isMenuExpanded 
                 ? 'nav-menu active' 
                 : 'nav-menu'}>
-                    <Link className="button" to="/login/">Log in </Link><Link className="button" variantcolor="#fff" to="/">Home </Link>
+                    <Link className="button" variantcolor="#fff" to="/">Home </Link>
                     <Link className="button" to="/projects/create">Create a Project </Link>
                     <Link className="button" to="/users/register">Register </Link>
                    
