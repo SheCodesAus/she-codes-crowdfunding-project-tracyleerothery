@@ -20,32 +20,6 @@ function RegisterForm() {
         }));
     };
 
-    // const postData = async () => {
-    //     const response = await fetch(
-    //         `${process.env.REACT_APP_API_URL}api-token-auth/`,
-    //     {
-    //     method: "post",
-    //     headers: {
-    //         "Content-Type": "application/json",
-    //     },
-    //     body: JSON.stringify(credentials),
-    //     }
-    //     );
-
-    //     return response.json();
-    // };
-
-  
-    
-    // const handleSubmit = (e) => {
-    //     e.preventDefault();
-    //     if (credentials.username && credentials.password) {
-    //     postData().then((response) => {
-    //     window.localStorage.setItem("token", response.token);
-    //     history.push("/");
-    //     });
-    //     }
-    // };
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -79,7 +53,7 @@ function RegisterForm() {
                 <input
                     type="text"
                     id="username"
-                    placeholder="Enter username"
+                    placeholder="Enter Username"
                     onChange={handleChange}
                 />
             </div>
@@ -88,25 +62,25 @@ function RegisterForm() {
                 <input
                     type="email"
                     id="email"
-                    placeholder="Enter email"
+                    placeholder="Enter Email"
                     onChange={handleChange}
                 />
             </div>
             <div>
-                <label htmlFor="firstName">FirstName:</label>
+                <label htmlFor="firstName">First Name:</label>
                 <input
                     type="text"
                     id="firstName"
-                    placeholder="Enter your first name"
+                    placeholder="Enter your First Name"
                     onChange={handleChange}
                 />
             </div>
             <div>
-                <label htmlFor="lastName">LastName:</label>
+                <label htmlFor="lastName">Last Name:</label>
                 <input
                     type="text"
                     id="lastName"
-                    placeholder="Enter your last name"
+                    placeholder="Enter your Last Name"
                     onChange={handleChange}
                 />
             </div>
@@ -129,7 +103,7 @@ function RegisterForm() {
                 />
             </div>
             <button type="submit" onClick={handleSubmit}>
-                Register
+                Create Pets Account
             </button>
         </form>
     );
