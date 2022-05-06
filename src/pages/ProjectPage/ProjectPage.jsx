@@ -57,6 +57,9 @@ function ProjectPage() {
 
     // Normal State
     return (
+    
+
+    
     <div className="project-wrapper">
         <div id="project-title-and-owner">
             <h2>{projectData.title}</h2> 
