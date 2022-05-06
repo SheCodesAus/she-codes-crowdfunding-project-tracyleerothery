@@ -35,9 +35,7 @@ function ProjectPage() {
                 setProjectData(data);
             
                 const totalPledges = data.pledges
-                    // eslint-disable-next-line eqeqeq
                     .filter (pledge => pledge.project_id == id)
-                    // reducing your list to an output value
                     .reduce ((sum, pledge) => sum + pledge.amount, 0)
                 setProjectPledgeAmount(totalPledges);
                 
@@ -74,7 +72,6 @@ function ProjectPage() {
                     <li>Closing Date: {projectData.closing_date}</li>
                 </ul>
         </div>
->
 
         <div>
             <button><Link to={`/pledges/${id}`}>Help a pet here!</Link></button>
@@ -86,9 +83,3 @@ function ProjectPage() {
 }
 
 export default ProjectPage;
-
-// NOTES:
-
-//  CHECK IF THAT ITEM IS IN LOCAL STORAGE
-//  IF IT IS - THEN LET THEM PLEDGE
-//  IF IT'S NOT IN THE LOCAL STORAGE, THEN LINK TO GO BACK TO THE LOGIN/SIGN UP
