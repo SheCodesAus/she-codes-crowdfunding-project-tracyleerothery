@@ -35,7 +35,7 @@ function Nav() {
         const className = "navbar";
 
         const loginButton = <Button className={className} onClick={navigateToLogin}>Login</Button>;
-        const signOutButton = <Button className={className} onClick={handleSignOut}>Sign Out1</Button>
+        const signOutButton = <Button className={className} onClick={handleSignOut}>Sign Out</Button>
 
         // This is a ternary operation
         //      Conditon ? True : false
