@@ -26,7 +26,7 @@ function RegisterForm() {
         if (credentials.username && credentials.password && credentials.password2) {
             try {
                 const response = await fetch(
-                    `${process.env.REACT_APP_API_URL}users/register/`,
+                    `${process.env.REACT_APP_API_URL}register/`,
                     {
                         method: "post",
                         headers: {
@@ -38,6 +38,7 @@ function RegisterForm() {
                 const data = await response.json();
                 window.localStorage.setItem("token", data.token);
                 window.localStorage.setItem("username", credentials.username);
+                console.log(data)
                 navigate("/");
             } catch (err) {
                 console.log(err);
