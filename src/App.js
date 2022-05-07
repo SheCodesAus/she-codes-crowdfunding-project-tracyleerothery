@@ -10,6 +10,7 @@ import LoginPage from "./pages/LoginPage/LoginPage";
 import PledgePage from "./pages/PledgePage/PledgePage";
 import RegisterPage from "./pages/RegisterPage/RegisterPage";
 import ProjectFormPage from "./pages/ProjectFormPage/ProjectFormPage";
+import EditProjectPage from "./pages/EditProjectPage/EditProjectPage";
 
 //Styles
 import "./App.css";
@@ -27,6 +28,7 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register/" element={<RegisterPage />} />
           <Route path="/" element={<HomePage />} />
+          <Route path="/project/:id/edit" element={<EditProjectPage/>} />
         </Routes>
       </div>
     </Router>

@@ -10,6 +10,8 @@ import { Link } from "react-router-dom";
 // Components
 import ProjectOwner from "../../components/ProjectPageComponents/ProjectOwner/ProjectOwner";
 
+const handleSubmit = async (event) => {"/project/:id/edit"}
+
 function ProjectPage() {
     // State
     const [projectData, setProjectData] = useState();
@@ -27,7 +29,7 @@ function ProjectPage() {
             return results.json();
         })
         .then((data) => {
-            console.log(data)
+            //console.log(data)
 
             if (data.detail === 'Not found.') {
                 setIsError(true)
@@ -77,11 +79,12 @@ function ProjectPage() {
         </div>
 
         <div>
-            <button><Link to={`/pledges/${id}`}>Help a pet here!</Link></button>
-        </div>
-
+            <Link to={`/pledges/${id}`} className="navbar" >Help a pet here!</Link>
+            <Link to={`/project/${projectData.id}/edit/`} className="navbar"> Edit Project</Link>
         
+        </div>
     </div>
+    
     );
 }
 
