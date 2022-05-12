@@ -51,7 +51,7 @@ function PledgeForm(pledgeData) {
         const data = await response.json();
         console.log(data)
         // THIS IS HOW YOU NAVIGATE AUTOMATICALLY
-        navigate(`/project/${id}`);
+        navigate(`/projects/${id}`);
       } catch (err) {
         console.log(err);
       }
