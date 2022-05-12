@@ -28,7 +28,7 @@ function ProjectForm(projectData) {
     console.log("handleSubmit", project, token)
     
     // Is user logged in and have they put something in all fields?
-    if (token && project.title && project.description && project.goal && project.image && project.date_created && project.category && project.closing_date) {
+    if (token && project.title && project.description && project.goal && project.image && project.date_created && project.category) {
       try {
         const response = await fetch(
           `${process.env.REACT_APP_API_URL}projects/`,
@@ -46,14 +46,13 @@ function ProjectForm(projectData) {
               is_open: project.is_open === "on",
               date_created: new Date(project.date_created).toISOString(),
               category: project.category,
-              closing_date: new Date(project.closing_date).toISOString()
             }),
           }
         );
         const data = await response.json();
         console.log(data)
         // THIS IS HOW YOU NAVIGATE AUTOMATICALLY
-        navigate(`/project/${data.id}`);
+        navigate(`project/${data.id}`);
       } catch (err) {
         console.log(err);
       }
@@ -94,21 +93,16 @@ function ProjectForm(projectData) {
     {
         id: "date_created",
         label: "Date created",
-        placeholder: "Enter title",
+        placeholder: "Enter Date",
         type: "date",
     },
     {
         id: "category",
-        label: "Category",
+        label: "category",
         placeholder: "Enter category",
         type: "text",
     },
-    {
-        id: "closing_date",
-        label: "Closing date",
-        placeholder: "Enter closing date",
-        type: "date",
-    },
+   
 ]
 
     return ( 

@@ -8,16 +8,15 @@ import "./ProjectPage.css";
 import { Link } from "react-router-dom";
 
 // Components
-import ProjectOwner from "../../components/ProjectPageComponents/ProjectOwner/ProjectOwner";
+import ProjectOwner from "../../components/ProjectOwner/ProjectOwner";
+import PledgeUser from "../../components/Pledge/PledgeUser"
 
-const handleSubmit = async (event) => {"/project/:id/edit"}
+// const handleSubmit = async (event) => {"/project/:id/edit"}
 
 function ProjectPage() {
     // State
     const [projectData, setProjectData] = useState();
-    const [projectPledgeAmount, setProjectPledgeAmount] = useState();
-    const [projectGoalPercentage, setGoalPercentage] = useState();
-    const [isError, setIsError] = useState(false);
+    const [isError] = useState(false);
 
     // Hooks
     const { id } = useParams();
@@ -25,32 +24,19 @@ function ProjectPage() {
     // Actions & Helpers
     useEffect(() => {
         fetch(`${process.env.REACT_APP_API_URL}projects/${id}`)
-        .then((results) => {
+          .then((results) => {
             return results.json();
-        })
-        .then((data) => {
-            //console.log(data)
+          })
+          .then((data) => {
+            setProjectData(data);
+          });
+      }, [id]);
 
-            if (data.detail === 'Not found.') {
-                setIsError(true)
-            } else {
-                setProjectData(data);
-            
-                const totalPledges = data.pledges
-                    .filter (pledge => pledge.project_id == id)
-                    .reduce ((sum, pledge) => sum + pledge.amount, 0)
-                setProjectPledgeAmount(totalPledges);
-                
-                const goalPercentage = ((totalPledges / data.goal) * 100).toFixed(2)
-                setGoalPercentage(goalPercentage);
-            }
-        })
-    }, [id]);
 
     // Loading State
     // "Skeleton" Loading
     if (!projectData) {
-        return <h3>Loading project...</h3>;
+        return <h3>Loading project Page...</h3>;
     }
 
     if (isError) {
@@ -74,9 +60,34 @@ function ProjectPage() {
                     <li>{projectData.description}</li>
                     <li>Category: {projectData.category}</li>
                     <li>Donation Goal: ${projectData.goal}</li>
-                    <li>Closing Date: {projectData.closing_date}</li>
                 </ul>
         </div>
+        <div className="pledges-amounts-comments">
+            <h3>Donations:</h3>
+            <ul>
+            {projectData.pledges.map((pledgeData, key) => {
+                return (
+                    <PledgeUser 
+                        key={`pledge-${pledgeData.id}`} 
+                        amount={pledgeData.amount} 
+                        supporter={pledgeData.supporter} 
+                        comment={pledgeData.comment} 
+                    />
+                );
+            })}
+            </ul>
+        </div>
+
+        {/* <div  className="pledge-list">
+                    {projectData.pledges.map((pledgeData, key) => 
+                    {return (
+                    <h4 className="pledges" key={`pledge-${pledgeData.id}`} >
+                        ${pledgeData.amount} 
+                    </h4>
+                    );
+                })
+                }
+                </div> */}
 
         <div>
             <Link to={`/pledges/${id}`} className="navbar" >Help a pet here!</Link>
