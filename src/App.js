@@ -23,7 +23,7 @@ function App() {
 
         <Routes>
           <Route path="/projects/create" element={<ProjectFormPage />} />
-          <Route path="/project/:id" element={<ProjectPage />} />
+          <Route path="/projects/:id" element={<ProjectPage />} />
           <Route path="/pledges/:id" element={<PledgePage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register/" element={<RegisterPage />} />

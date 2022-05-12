@@ -168,9 +168,18 @@ function EditProjectForm() {
           onChange={handleChange}
         />
       </div>
-
-
       <div>
+                <label htmlFor="category">Update Category:</label>
+                <input
+                    type="select"
+                    id="category"
+                    value={project.category}
+                    onChange={handleChange}
+                />
+            </div>
+
+
+      {/* <div>
         <label htmlFor="category">Category:</label>
         <select id="category" onChange={handleChange} value={project.category}>
             <option value="">--Please choose an option</option>
@@ -180,7 +189,7 @@ function EditProjectForm() {
             <option value={4}>Kittens</option>
             <option value={5}>Cats</option>
         </select>
-      </div>
+      </div> */}
       
      
    
