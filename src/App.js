@@ -39,6 +39,8 @@ function App() {
           <Route path="/project/:id/edit" element={<EditProjectPage/>} />
           <Route path="/users/:id" element={<UserPage/>} />
 
+          className="button"
+
           <Route path="/404" element={<NotFoundPage/>} />
         </Routes>
       </div>

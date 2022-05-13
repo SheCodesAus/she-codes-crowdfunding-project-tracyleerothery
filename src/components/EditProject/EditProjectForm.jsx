@@ -49,20 +49,7 @@ function EditProjectForm() {
 
   // State
   const token = window.localStorage.getItem("token");
-//   const [project, setProject] = useState({
-//     title: "",
-//     blurb: "",
-//     category_id: "",
-//     goal: "",
-//     goal_date: "",
-//     primary_image: "",
-//     is_open: "",
-//     is_archived: "",
-//     pledge_type_id: "",
-//   });
 
-  // Actions and Helpers
-  
 
   const handleChange = (event) => {
     const { id, value } = event.target;
@@ -88,8 +75,7 @@ function EditProjectForm() {
           category_id: project.category_id,
           goal: project.goal,
           goal_date: project.goal_date,
-          primary_image: project.primary_image,
-          secondary_image: project.secondary_image,
+          image: project.image,
           is_open: true,
           is_archived: false,
           pledge_type_id: project.pledge_type_id,
@@ -100,7 +86,8 @@ function EditProjectForm() {
       const data = await res.json();
       console.log(data);
       console.log(project);
-      navigate(`/project/${project.id}/`);
+      navigate(`/projects/${project.id}`);
+    
     } catch (err) {
       console.log(err);
     }
@@ -159,7 +146,7 @@ function EditProjectForm() {
           onChange={handleChange}
         />
       </div>
-      <div>
+      {/* <div>
         <label htmlFor="date_created">Date Created:</label>
         <input
           type="date"
@@ -167,7 +154,7 @@ function EditProjectForm() {
           value={project.date_created}
           onChange={handleChange}
         />
-      </div>
+      </div> */}
       <div>
                 <label htmlFor="category">Update Category:</label>
                 <input
