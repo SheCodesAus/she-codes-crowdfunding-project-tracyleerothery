@@ -5,8 +5,8 @@ function RegisterForm() {
     const [credentials, setCredentials] = useState({
         email: "",
         username: "",
-        firstName: "",
-        lastName: "",
+        first_name: "",
+        last_name: "",
         password: "",
         password2: "",
     });
@@ -68,19 +68,19 @@ function RegisterForm() {
                 />
             </div>
             <div>
-                <label htmlFor="firstName">First Name:</label>
+                <label htmlFor="first_name">First Name:</label>
                 <input
                     type="text"
-                    id="firstName"
+                    id="first_name"
                     placeholder="Enter your First Name"
                     onChange={handleChange}
                 />
             </div>
             <div>
-                <label htmlFor="lastName">Last Name:</label>
+                <label htmlFor="last_name">Last Name:</label>
                 <input
                     type="text"
-                    id="lastName"
+                    id="last_name"
                     placeholder="Enter your Last Name"
                     onChange={handleChange}
                 />
