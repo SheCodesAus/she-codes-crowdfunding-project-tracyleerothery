@@ -17,7 +17,7 @@ import EditProjectPage from "./pages/EditProjectPage/EditProjectPage";
 import PledgePage from "./pages/PledgePage/PledgePage";
 import NotFoundPage from "./pages/NotFoundPage";
 
-
+import UserPage from "./pages/ProfilePage";
 
 
 //Styles
@@ -37,7 +37,7 @@ function App() {
           <Route path="/register/" element={<RegisterPage />} />
           <Route path="/" element={<HomePage />} />
           <Route path="/project/:id/edit" element={<EditProjectPage/>} />
-
+          <Route path="/users/:id" element={<UserPage/>} />
 
           <Route path="/404" element={<NotFoundPage/>} />
         </Routes>
