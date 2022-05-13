@@ -34,12 +34,14 @@ function HomePage() {
           
     <div className="hero-image">
     <div className="hero-text">
-      <h1>All Pets</h1><p>
+      <h1>All Pals</h1><p>
                     <button><Link to="/projects/create/">POST NEW PROJECT</Link></button>
                 </p>
-      <p>Helping every good boy and girl find a new home. Like Neopets but you get to help real animlas.</p>
+      <p>Helping every Pal get ready for a new home.</p> 
     </div>
 </div> 
+
+
                 
 
             </div>

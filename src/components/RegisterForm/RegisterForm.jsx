@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+
+import '../../pages/forms.css';
+import '../../pages/styles.css';
+
 function RegisterForm() {
     const [credentials, setCredentials] = useState({
         email: "",
@@ -48,8 +52,10 @@ function RegisterForm() {
 
 
     return (
-        <form>
-            <div>
+      
+         
+        <form className="login-form">
+        <div className="form-item">
                 <label htmlFor="username">Username:</label>
                 <input
                     type="text"
@@ -58,7 +64,9 @@ function RegisterForm() {
                     onChange={handleChange}
                 />
             </div>
-            <div>
+
+
+            <div className="form-item">
                 <label htmlFor="email">Email:</label>
                 <input
                     type="email"
@@ -67,7 +75,8 @@ function RegisterForm() {
                     onChange={handleChange}
                 />
             </div>
-            <div>
+
+            <div className="form-item">
                 <label htmlFor="first_name">First Name:</label>
                 <input
                     type="text"
@@ -76,7 +85,8 @@ function RegisterForm() {
                     onChange={handleChange}
                 />
             </div>
-            <div>
+
+            <div className="form-item">
                 <label htmlFor="last_name">Last Name:</label>
                 <input
                     type="text"
@@ -85,7 +95,8 @@ function RegisterForm() {
                     onChange={handleChange}
                 />
             </div>
-            <div>
+
+            <div className="form-item">
                 <label htmlFor="password">Password:</label>
                 <input
                     type="password"
@@ -94,7 +105,8 @@ function RegisterForm() {
                     onChange={handleChange}
                 />
             </div>
-            <div>
+
+            <div className="form-item">
                 <label htmlFor="password2">Repeat Password:</label>
                 <input
                     type="password"
@@ -103,11 +115,19 @@ function RegisterForm() {
                     onChange={handleChange}
                 />
             </div>
-            <button type="submit" onClick={handleSubmit}>
-                Create Pets Account
+
+            <div className="form-item">
+            <button className="button1" type="submit" onClick={handleSubmit}>
+                Create Account
             </button>
-        </form>
-    );
+            </div>
+
+
+
+       </form>
+   
+    
+       );
 }
 
 export default RegisterForm;

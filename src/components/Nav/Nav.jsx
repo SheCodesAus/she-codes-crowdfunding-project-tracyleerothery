@@ -61,7 +61,7 @@ function Nav() {
                 ? 'nav-menu active' 
                 : 'nav-menu'}>
                     <Link className="button" variantcolor="#fff" to="/">Home </Link>
-                    <Link className="button" to="/projects/create">Create a Project </Link>
+                    <Link className="button" to="/projects/create">Help A Pal </Link>
                     <Link className="button" to="/register/">Register </Link>
                    
                     {checkUser()}

@@ -8,37 +8,6 @@
 
 
 
-
-  .form-section {
-    position: relative;
-    margin: 8% auto;
-    min-height: 60%;
-    width: 50%;
-    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
-    background: white;
-    font-weight: bold;
-    padding: 0px 0px 5px 15px;
-    box-sizing: border-box;
-    border-radius: 8px;
-    background-color: #8246af;
-}
-
-.form-item {
-    display: block;
-    font-weight: bold;
-    margin: 5px 5px 15px 20px;
-    padding: 4px;
-    width: 80%;
-    height: 5%;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-    border-bottom: 2px solid #FFA300;
-    font-size: 16px;
-}
-
-
-
 body {
     background-color: rgb(240, 239, 239);
     font-family: var(--main-font);
@@ -154,19 +123,6 @@ h3 {
   }
 
   
-
-.form-header {
-    font-family: var(--main-font);
-    text-decoration: none;
-    font-size: 2rem;
-    margin: 0;
-    color: #8246AF;
-    display: flex;
-    justify-content: center;
-}
-.form-item {
-    color: whitesmoke;
-}
 
 a:link {
   text-decoration: none;

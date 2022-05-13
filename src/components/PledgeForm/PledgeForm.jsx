@@ -4,6 +4,9 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 
+import '../../pages/forms.css';
+import '../../pages/styles.css';
+
 function PledgeForm(pledgeData) {
   // State
   const [pledge, postPledge] = useState(
@@ -59,29 +62,36 @@ function PledgeForm(pledgeData) {
   };
 
     return (
-        <form>
-          <div>
-            <label htmlFor="amount">Enter Amount:</label>
-            <input
+        <div className="form">
+        <form className="login-form">
+          <div className="form-item">
+            <label htmlFor="amount">Amount:</label>
+            <input className="form"
               type="text"
               id="amount"
-              placeholder="Enter amount"
+              placeholder="$  "
               onChange={handleChange}
             />
           </div>
-          <div>
-            <label htmlFor="comment">Leave a Comment:</label>
+
+          <div className="form-item">
+            <label htmlFor="comment">Comment:</label>
             <input
               type="text"
               id="comment"
-              placeholder="Comment"
+              placeholder="Leave a Message to the Pet"
               onChange={handleChange}
             />
           </div>
+
+          <div className="form-item">
           <button type="submit" onClick={handleSubmit}>
-            Post Pledge
+            Donate
           </button>
+          </div>
+
         </form>
+        </div>
       );
 }
 

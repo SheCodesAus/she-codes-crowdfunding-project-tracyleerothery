@@ -1,0 +1,73 @@
+
+form {
+  margin: 50px auto;
+  width: 50%;
+  text-align: center;
+}
+
+.login-form {
+  margin: 50px auto;
+  width: 59%;
+  text-align: left;
+}
+
+
+.form-item {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.form-item label {
+  font-size: 17px;
+  color: #8246af;
+  padding: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: 1px;
+}
+
+.form-item input,
+.form-item textarea {
+  flex-basis: 50%;
+  background-color: white;
+}
+
+.form-item input:hover,
+.form-item textarea:hover {
+  border: 2px solid #8246af;
+}
+
+.form-item input,
+.form-item textarea,
+.form-item button {
+  border: 2px solid #8246af;
+  padding: 5px;
+  font-size: 15px;
+  background-color: white;
+}
+
+.form-item input,
+.form-item textarea {
+  color: #8246af;
+}
+
+.form-item button {
+  margin-top: 10px;
+  font-size: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: 1.5px;
+}
+
+.form-item button:hover {
+  border: 2px solid rgb(255, 255, 255);
+  background-color: #8246af;
+  color: white;
+}
+
+.form-item button {
+  width: 100px;
+  color: #8246af;
+}

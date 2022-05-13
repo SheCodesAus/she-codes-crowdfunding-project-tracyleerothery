@@ -13,7 +13,7 @@
     background-image: url("../HomePage/images/dog123.gif");
   
     /* Set a specific height */
-    height: 60vh;
+    height: 90vh;
   
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
@@ -55,7 +55,7 @@
     border-radius: 8px;
     background-color: #8246af;
 }
-
+/* 
 .form-item {
     display: block;
     font-weight: bold;
@@ -69,7 +69,7 @@
     border-bottom: 2px solid #FFA300;
     font-size: 16px;
 }
-
+ */
 
 
 body {
@@ -197,9 +197,9 @@ h3 {
     display: flex;
     justify-content: center;
 }
-.form-item {
+/* .form-item {
     color: whitesmoke;
-}
+} */
 
 a:link {
   text-decoration: none;

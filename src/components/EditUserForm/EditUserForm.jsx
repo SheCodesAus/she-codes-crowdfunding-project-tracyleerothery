@@ -3,6 +3,8 @@ import React, { useState } from "react";
 // Imports
 import { useNavigate, Link } from "react-router-dom";
 
+import '../../pages/forms.css';
+
 function EditProfileForm({user}) {
   // State
     const [editUserInfo, setEditUserInfo] = useState({
@@ -100,10 +102,12 @@ if (!window.localStorage.getItem("token")) {
 }
 
     return ( 
-        <form>
+        <form className="login-form">
             {formFields.map((field, key) => {
                 return (
+                    <div className="form">
                 <div key={`${key}-${field.id}`}>
+                <div className="form-item">
                     <label htmlFor={field.id}>
                         {field.label}
                     </label>
@@ -114,13 +118,23 @@ if (!window.localStorage.getItem("token")) {
                         onChange={handleChange}
                     />
                 </div>
+                </div>
+                </div>
+                
                 )
             })}
+           
+                
+
+            <div className="form-item">
             <button type="submit" onClick={handleSubmit}>
                 Update Now
             </button>
+            </div>
+            
         </form>
-    )
+        
+    );
 }
 
 export default EditProfileForm;
