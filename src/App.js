@@ -3,14 +3,22 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Components 
 
+// pages
+
 import Nav from "./components/Nav/Nav";
 import HomePage from "./pages/HomePage/HomePage";
 import ProjectPage from "./pages/ProjectPage/ProjectPage";
-import LoginPage from "./pages/LoginPage/LoginPage";
-import PledgePage from "./pages/PledgePage/PledgePage";
-import RegisterPage from "./pages/RegisterPage/RegisterPage";
 import ProjectFormPage from "./pages/ProjectFormPage/ProjectFormPage";
+
+import RegisterPage from "./pages/RegisterPage/RegisterPage";
+import LoginPage from "./pages/LoginPage/LoginPage";
 import EditProjectPage from "./pages/EditProjectPage/EditProjectPage";
+
+import PledgePage from "./pages/PledgePage/PledgePage";
+import NotFoundPage from "./pages/NotFoundPage";
+
+
+
 
 //Styles
 import "./App.css";
@@ -29,6 +37,9 @@ function App() {
           <Route path="/register/" element={<RegisterPage />} />
           <Route path="/" element={<HomePage />} />
           <Route path="/project/:id/edit" element={<EditProjectPage/>} />
+
+
+          <Route path="/404" element={<NotFoundPage/>} />
         </Routes>
       </div>
     </Router>
