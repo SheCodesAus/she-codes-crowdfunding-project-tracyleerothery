@@ -63,6 +63,7 @@ function Nav() {
                     <Link className="button" variantcolor="#fff" to="/">Home </Link>
                     <Link className="button" to="/projects/create">Create a Project </Link>
                     <Link className="button" to="/register/">Register </Link>
+                    <Link className="button" to="/users/:id">Users </Link>
                    
                     {checkUser()}
             </ul>
