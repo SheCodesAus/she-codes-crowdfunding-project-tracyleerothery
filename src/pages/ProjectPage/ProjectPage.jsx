@@ -12,7 +12,7 @@ import ProjectOwner from "../../components/ProjectOwner/ProjectOwner";
 import PledgeUser from "../../components/Pledge/PledgeUser"
 
 // const handleSubmit = async (event) => {"/project/:id/edit"}
-import Palslogo from "../../pages/HomePage/images/Palslogo.png"
+import Palslogo from "../../pages/HomePage/images/logo.png"
 
 function ProjectPage() {
     // State
