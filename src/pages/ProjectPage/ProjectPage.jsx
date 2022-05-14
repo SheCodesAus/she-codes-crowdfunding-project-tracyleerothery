@@ -64,15 +64,16 @@ function ProjectPage() {
         <div className="project-details">
                 <img className="project-img" src={projectData.image} alt="project img"/>
                 <p className="projectinfo">Every animal on this site is waiting to be someone’s Pal and every Pal deserves a home. All of our Pals are waiting at rescues and shelters, where they just need a little extra help from you before they can be placed up for adoption. </p>
-                <ul className="bulletpoint-text">
-                    <p>{projectData.description}</p>
+                <ul>
+                    <div className="yellowtext">
+                    <p>{projectData.description}</p></div>
                     <p>Type of Pal: {projectData.category}</p>
                     <p>Donation Goal: ${projectData.goal}</p>
                 </ul>
         </div>
         
         <div className="pledges-amounts-comments">
-            <h6>Donations:</h6>
+            <p className="donate">Donations:</p>
             <p className="plain-text">Below is the money received so far to get this pal ready to be put up for adoption. </p>
             
             <ul className="bulletpoint-text">
