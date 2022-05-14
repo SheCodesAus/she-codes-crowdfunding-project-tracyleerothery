@@ -53,28 +53,29 @@ function ProjectPage() {
     
     <div className="project-wrapper">
         <div id="project-title-and-owner">
-            <h2>{projectData.title}</h2> 
-            <h5>Created by: <br></br>
+            <h3>{projectData.title}</h3> 
+            <h6>Created by: <br></br>
             <ProjectOwner owner={projectData.owner} /> 
             <br></br> Date Created:<br></br>
-             {projectData.date_created} </h5>
+             {projectData.date_created} </h6>
             
         </div>
         
         <div className="project-details">
                 <img className="project-img" src={projectData.image} alt="project img"/>
                 <h5>Every animal on this site is waiting to be someone’s Pal and every Pal deserves a home. All of our Pals are waiting at rescues and shelters, where they just need a little extra help from you before they can be placed up for adoption. </h5>
-                <ul>
+                <ul className="bulletpoint-text">
                     <li>{projectData.description}</li>
                     <li>Category: {projectData.category}</li>
                     <li>Donation Goal: ${projectData.goal}</li>
                 </ul>
         </div>
-        <p>Below is the money received so far to get this pal ready to be put up for adoption. </p>
+        
         <div className="pledges-amounts-comments">
-            <h3>Donations:</h3>
+            <h6>Donations:</h6>
+            <p className="plain-text">Below is the money received so far to get this pal ready to be put up for adoption. </p>
             
-            <ul>
+            <ul className="bulletpoint-text">
             {projectData.pledges.map((pledgeData, key) => {
                 return (
                     <PledgeUser 
