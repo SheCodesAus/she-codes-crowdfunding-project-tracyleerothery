@@ -45,7 +45,7 @@ function HomePage() {
                     <p>
                     <button><Link to="/projects/create/">SUPPORT A PAL</Link></button>
                     </p>
-                    
+                    <br></br>
       <h2>Helping every Pal get ready for a new home.</h2> 
       
     </div>
