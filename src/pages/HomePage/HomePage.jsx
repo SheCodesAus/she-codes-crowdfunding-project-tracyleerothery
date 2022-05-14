@@ -57,7 +57,7 @@ function HomePage() {
             </div>
             
             
-
+          
             <div id="project-list">
                 {projectList.map((projectData, key) => {
                     return <ProjectCard 
@@ -66,6 +66,7 @@ function HomePage() {
                     />;
                 })}
             </div>
+        
                 
                 <br></br>
             <div>
