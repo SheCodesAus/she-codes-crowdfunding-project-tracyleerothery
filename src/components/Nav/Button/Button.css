@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Comfortaa:wght@300&family=Raleway:wght@100&display=swap');
+
+:root {
+    --main-font: 'Raleway', sans-serif;
+}
+
+
+
+
+
+
+body {
+    background-color: rgb(240, 239, 239);
+    font-family: var(--main-font);
+}
+
+
+
+
+
+h1 {
+    font-family: var(--main-font);
+    text-decoration: none;
+    font-size: 4rem;
+    margin: 5px;
+}
+
+h2 {
+    font-family: var(--main-font);
+}
+
+h3 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.profile {
+  color: #FFA300;
+}
+
+#header-text {
+    flex-basis: 80%;
+    display: flex;
+   
+}
+
+#title {
+  padding: 2px;
+
+}
+
+.btn-medium {
+    background-color: #6b469a;
+}
+
+.navbar {
+    font-weight: bolder;
+    max-width: 100%;
+    margin-bottom: 5px;
+    padding: 15px;
+    overflow: hidden; 
+    font-family: var(--main-font);   
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: right;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #f9f9f9;
+    padding: 14px 16px;
+    background-color:#FFA300;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+
+  /* Add a purple background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color:#8246af;
+    color: azure;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    background-color: #FFA300;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #8246af;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  
+
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+footer {
+  font-family: var(--main-font);
+  text-align: center;
+  font-size: 16px;
+  padding: 20px;
+  background-color: #6b469a;
+  color: #fff;
+}
+
+.story_button2 {
+  font-weight: bold;
+  font-family: var(--main-font);
+  background-color: #FFA300; 
+  color: white;
+  border: 2px solid #FFA300;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.story_button2 a{
+  background-color: #ffffff; 
+  color: white;
+  border: 2px solid #ffffff;
+}
+
+.story_button2 a:hover{
+  background-color: #8246af; 
+  color: white;
+  border: 2px solid #ffffff;
+}
+
+#story-image {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  
+  }
