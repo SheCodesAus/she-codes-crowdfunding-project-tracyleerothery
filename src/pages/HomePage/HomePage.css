@@ -9,7 +9,8 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 35%; 
+  width: 35%;
+ 
 }
 
 /* The hero image */
@@ -34,7 +35,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    background: rgba(186, 119, 203, 0.719);
+    background: none;
   }
   
   /* Place text in the middle of the image */
@@ -80,7 +81,7 @@
 
 
 body {
-    background-color: #dece90;
+    background-color: #ffffff;
     font-family: var(--main-font);
 }
 

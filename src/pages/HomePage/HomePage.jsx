@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 
 //images
-import Palslogo from "../../pages/HomePage/images/Palslogo.png"
+import Palslogo from "../../pages/HomePage/images/logo.png"
 
 function HomePage() {
 
