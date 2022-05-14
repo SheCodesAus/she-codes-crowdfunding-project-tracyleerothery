@@ -54,18 +54,13 @@ function HomePage() {
         <Link to="/"><img className="Palslogo-image" src={Palslogo}/></Link>
     </div>
 
-    <h5>Every animal on this site is waiting to be someone’s Pal and every Pal deserves a home. 
-
-Founded by Tracy Rothery in 2022, All Pals hopes to prepare loving animals for their future fur families. All of our pals are currently waiting to be adopted at rescue centres and shelters in Perth, Western Australia. We understand that these animals need a little extra care to transition smoothly into their new lives. 
-
-They need a little help from you to give them the best chance at adoption.
-
-Support a pal today and register now.</h5>
-
-
-                
-
-            </div>
+    <div className="aboutus">
+    <p>Every animal on this site is waiting to be someone’s Pal and every Pal deserves a home. </p>
+    <p>Founded by Tracy Rothery in 2022, All Pals hopes to prepare loving animals for their future fur families.</p>
+        All of our pals are currently waiting to be adopted at rescue centres and shelters in Perth, Western Australia. We understand that these animals need a little extra care to transition smoothly into their new lives.<p/>
+    <p>They need a little help from you to give them the best chance at adoption.</p>
+    <p>Support a pal today and register now.</p>
+    </div>
             
             
           
@@ -84,6 +79,7 @@ Support a pal today and register now.</h5>
                 More to come...
             </div>
 
+        </div>
         </div>
     );
 }

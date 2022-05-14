@@ -150,6 +150,16 @@ h5 {
 
 }
 
+.aboutus {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #000000;
+  font-weight: bolder;
+  margin: 10px;
+  
+
+}
+
 h3 {
     font-size: 2rem;
     margin: 0;
