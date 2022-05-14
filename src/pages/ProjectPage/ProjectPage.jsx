@@ -63,7 +63,7 @@ function ProjectPage() {
         
         <div className="project-details">
                 <img className="project-img" src={projectData.image} alt="project img"/>
-                <h4>Every animal on this site is waiting to be someone’s Pal and every Pal deserves a home. All of our Pals are waiting at rescues and shelters, where they just need a little extra help from you before they can be placed up for adoption. </h4>
+                <h5>Every animal on this site is waiting to be someone’s Pal and every Pal deserves a home. All of our Pals are waiting at rescues and shelters, where they just need a little extra help from you before they can be placed up for adoption. </h5>
                 <ul>
                     <li>{projectData.description}</li>
                     <li>Category: {projectData.category}</li>
