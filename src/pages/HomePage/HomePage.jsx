@@ -46,7 +46,7 @@ function HomePage() {
                     <button><Link to="/projects/create/">SUPPORT A PAL</Link></button>
                     </p>
                     
-      <p className="homepage-text" >Helping every Pal get ready for a new home.</p> 
+      <h2>Helping every Pal get ready for a new home.</h2> 
       
     </div>
 </div> 
