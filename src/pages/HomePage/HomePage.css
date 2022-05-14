@@ -16,7 +16,9 @@
 /* The hero image */
 .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    
     background-image: url("../HomePage/images/dogrun.avif");
+    
 
 
   
@@ -36,6 +38,7 @@
     height: 100%;
     position: absolute;
     background: none;
+    
   }
   
   /* Place text in the middle of the image */
@@ -94,10 +97,20 @@ h1 {
     text-decoration: none;
     font-size: 4rem;
     margin: 5px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.homepage-text {
+  text-shadow: 10px 10px 10px #000000;
+  font-family: var(--main-font);
+  font-size: 1.5rem;
+  
 }
 
 h2 {
     font-family: var(--main-font);
+    
 }
 
 h3 {
