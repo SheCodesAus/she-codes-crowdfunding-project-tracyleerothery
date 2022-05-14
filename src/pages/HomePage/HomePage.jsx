@@ -9,6 +9,10 @@ import './HomePage.css';
 // Imports
 import { Link } from "react-router-dom";
 
+
+//images
+import Palslogo from "../../pages/HomePage/images/Palslogo.png"
+
 function HomePage() {
 
     // States
@@ -26,7 +30,10 @@ function HomePage() {
     }, []);
 
     return (
-        <div className="homepage-wrapper">
+        
+        <div className="homepage-wrapper"><div>
+        <Link to="/"><img className="Palslogo-image" src={Palslogo}/></Link>
+    </div>
           
 
 
@@ -34,10 +41,13 @@ function HomePage() {
           
     <div className="hero-image">
     <div className="hero-text">
-      <h1>All Pals</h1><p>
+      <h1>All Pals</h1>
+                    <p>
                     <button><Link to="/projects/create/">SUPPORT A PAL</Link></button>
-                </p>
+                    </p>
+                    
       <p>Helping every Pal get ready for a new home.</p> 
+      
     </div>
 </div> 
 
@@ -45,6 +55,7 @@ function HomePage() {
                 
 
             </div>
+            
             
 
             <div id="project-list">
