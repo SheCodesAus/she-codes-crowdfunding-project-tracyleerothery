@@ -7,3 +7,15 @@
     margin: 80px;
 }
 
+
+.project-wrapper{
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.project-info {
+  padding: 0;
+}
+
+

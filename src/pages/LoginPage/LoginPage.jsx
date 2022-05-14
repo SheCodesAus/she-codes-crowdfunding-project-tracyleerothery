@@ -4,10 +4,14 @@ import React from "react";
 //Components
 import LoginForm from "../../components/LoginForm/LoginForm";
 
+import Palslogo from "../../pages/HomePage/images/Palslogo.png"
+
 
 function LoginPage() {
     
-    return <LoginForm />
+    return ( <LoginForm />
+    )
+    
 }
 
 export default LoginPage;
