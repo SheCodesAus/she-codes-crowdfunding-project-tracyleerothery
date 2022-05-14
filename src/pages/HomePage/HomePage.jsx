@@ -31,9 +31,7 @@ function HomePage() {
 
     return (
         
-        <div className="homepage-wrapper"><div>
-        <Link to="/"><img className="Palslogo-image" src={Palslogo}/></Link>
-    </div>
+        
           
 
 
@@ -49,7 +47,14 @@ function HomePage() {
       <h4>Helping every Pal get ready for a new home.</h4> 
       
     </div>
+
+    
 </div> 
+<div className="homepage-wrapper"><div>
+        <Link to="/"><img className="Palslogo-image" src={Palslogo}/></Link>
+    </div>
+
+    <h5>Every animal on this site is waiting to be someone’s Pal and every Pal deserves a home. All of our Pals are waiting at rescues and shelters, where they just need a little extra help from you before they can be placed up for adoption.</h5>
 
 
                 
