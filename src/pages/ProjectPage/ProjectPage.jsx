@@ -73,7 +73,7 @@ function ProjectPage() {
         <p>Below is the money received so far to get this pal ready to be put up for adoption. </p>
         <div className="pledges-amounts-comments">
             <h3>Donations:</h3>
-            <p>sdhskd</p>
+            
             <ul>
             {projectData.pledges.map((pledgeData, key) => {
                 return (

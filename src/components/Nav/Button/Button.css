@@ -58,7 +58,7 @@ h3 {
     font-weight: bolder;
     max-width: 100%;
     margin-bottom: 5px;
-    padding: 15px;
+    padding: 1px;
     overflow: hidden; 
     font-family: var(--main-font);   
   }
@@ -166,7 +166,7 @@ footer {
   border: 2px solid #FFA300;
   padding: 10px;
   border-radius: 10px;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .story_button2 a{

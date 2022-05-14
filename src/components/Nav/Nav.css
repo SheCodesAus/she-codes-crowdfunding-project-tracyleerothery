@@ -51,20 +51,22 @@ h3 {
 
 
 .navbar {
-    font-weight: bolder;
     max-width: 100%;
-    margin-bottom: 5px;
-    padding: 15px;
+    margin-bottom: 0px;
+    padding: 1px;
+    margin-top: 0px;
+    font-weight: bolder;
     overflow: hidden; 
-    font-family: var(--main-font);   
+    font-family: var(--main-font);  
+    background-color: #ffde59; 
   }
   
-  /* Links inside the navbar */
+  Links inside the navbar
   .navbar a {
     float: left;
     font-size: 16px;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px 25px;
     text-decoration: none;
   }
   
@@ -83,65 +85,34 @@ h3 {
     padding: 14px 16px;
     background-color:#FFA300;
     font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
+    margin: 0;
   }
 
-  /* Add a purple background color to navbar links on hover */
+  /* Add a background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color:#8246af;
+    background-color:#46a4af;
     color: azure;
   }
-  
-  /* Dropdown content (hidden by default) */
-  .dropdown-content {
-    display: none;
-    background-color: #FFA300;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  /* Add a grey background color to dropdown links on hover */
-  .dropdown-content a:hover {
-    background-color: #8246af;
-  }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
   
 
 a:link {
   text-decoration: none;
-  color: #8246af
+  color: #ffffff
 }
 
 a:visited {
   text-decoration: none;
-  color: #8246af
+  color: #ffffff
 }
 
 a:hover {
   text-decoration: none;
-  color: #8246af
+  color: #ffffff
 }
 
 a:active {
   text-decoration: none;
-  color: #8246af
+  color: #ffffff
 }
 
 footer {
@@ -161,7 +132,7 @@ footer {
   border: 2px solid #FFA300;
   padding: 10px;
   border-radius: 10px;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .story_button2 a{

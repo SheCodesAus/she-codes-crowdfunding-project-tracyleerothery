@@ -43,10 +43,10 @@ function HomePage() {
     <div className="hero-text">
       <h1>All Pals</h1>
                     <p>
-                    <button><Link to="/projects/create/">SUPPORT A PAL</Link></button>
+                    <button className="cta"><Link  to="/projects/create/">SUPPORT A PAL</Link></button>
                     </p>
-                    <br></br>
-      <h2>Helping every Pal get ready for a new home.</h2> 
+                    
+      <h4>Helping every Pal get ready for a new home.</h4> 
       
     </div>
 </div> 
@@ -68,7 +68,7 @@ function HomePage() {
             </div>
         
                 
-                <br></br>
+   
             <div>
                 More to come...
             </div>
