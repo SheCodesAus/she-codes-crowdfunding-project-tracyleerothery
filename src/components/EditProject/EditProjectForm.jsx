@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 
+import "../../pages/HomePage/HomePage.css"
 
 // function ProjectPage() {
 //     const [projectData, setProjectData] = useState();
@@ -95,7 +96,9 @@ function EditProjectForm() {
 
   if (!token || token===null || token===undefined || token==="undefined"){
     return (
-      <Link to="/login">Please login to edit to this project</Link>
+      <div className="pleaselogin">
+      <Link to="/login"><strong>Please login to edit to this project</strong></Link>
+      </div>
     );
   }
 

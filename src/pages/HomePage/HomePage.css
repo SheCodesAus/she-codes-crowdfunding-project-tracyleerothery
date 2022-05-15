@@ -177,6 +177,15 @@ h6 {
 
 }
 
+.pleaselogin {
+  text-align: center;
+  font-size: 5rem;
+  color: #000000;
+  background-color: #ffde59;
+  font-weight: bolder;
+  margin: 10px;
+}
+
 h3 {
     font-size: 2rem;
     margin: 0;

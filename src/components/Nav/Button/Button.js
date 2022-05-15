@@ -2,6 +2,7 @@ import React from "react";
 
 // Styles
 import './Button.css'
+import "../Nav.css"
 
 const STYLES = [
     'navbar',

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
+import "../pages/HomePage/HomePage.css"
+
 // Imports
 import { Link } from "react-router-dom";
 
@@ -28,7 +30,7 @@ function UserPage() {
 
     // Loading State
     if (!userData) {
-        return <h3>Loading profile...</h3>;
+        return <h3 className="pleaselogin">Loading profile...</h3>;
 
     }
 

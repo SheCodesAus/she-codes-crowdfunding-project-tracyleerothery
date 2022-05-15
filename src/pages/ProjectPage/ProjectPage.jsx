@@ -37,11 +37,11 @@ function ProjectPage() {
     // Loading State
     // "Skeleton" Loading
     if (!projectData) {
-        return <h3>Loading project Page...</h3>;
+        return <p className="pcardtitle">Loading project Page...</p>;
     }
 
     if (isError) {
-        return <h3>Project Doesn't Exist...</h3>;
+        return <p className="pcardtitle">Project Doesn't Exist...</p>;
     }
 
     // Normal State
@@ -59,6 +59,7 @@ function ProjectPage() {
         
         <div className="project-details">
                 <img className="project-page-img" src={projectData.image} alt="project img"/>
+                <br></br><br></br>
                 <p className="projectinfo">Every animal on this site is waiting to be someone’s Pal and every Pal deserves a home. All of our Pals are waiting at rescues and shelters, where they just need a little extra help from you before they can be placed up for adoption. </p>
                 <ul>
                     <div className="yellowtext">
@@ -95,13 +96,18 @@ function ProjectPage() {
         </div>
 
      
-
-        <div className="plain-text">
-            <Link to={`/pledges/${id}`} className="navbar" >Support a Pal</Link>
-        </div>
-        <div className="plain-text">
-            <Link to={`/project/${projectData.id}/edit/`} className="navbar"> Edit Pal Page</Link>
-        </div>
+        <div className="p-button-position">
+        <div className="p-item">
+        <button>
+            <Link to={`/pledges/${id}`} className="p-item" >Support Pal Page</Link>
+       </button>
+      
+        <button>
+        <Link to={`/project/${projectData.id}/edit/`} className="p-item"> Edit Pal Page</Link>
+       </button>
+       </div>
+       </div>
+        
         
        
     </div>

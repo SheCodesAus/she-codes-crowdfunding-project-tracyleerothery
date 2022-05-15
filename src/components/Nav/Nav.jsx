@@ -5,6 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 // Styles
 import "./Nav.css";
+import "../../components/Nav/Button/Button.css";
 
 function Nav() {
 
@@ -51,21 +52,22 @@ function Nav() {
     };
 
     return(
-        <nav className="navbar">
+        <nav className="navbar1">
             
-            <div className="menu-icon" onClick={handleClick}>
+            <div className="navbar1" onClick={handleClick}>
             </div>
 
             <ul className={
                 isMenuExpanded 
                 ? 'nav-menu active' 
                 : 'nav-menu'}>
-                    <Link className="button" variantcolor="#fff" to="/">Home </Link>
-                    <Link className="button" to="/projects/create">Support A Pal </Link>
-                    <Link className="button" to="/register/">Register </Link>
+                    <Link className="navbar" variantcolor="#fff" to="/">Home </Link>
+                    <Link className="navbar" to="/projects/create">Support A Pal </Link>
+                    <Link className="navbar" to="/register/">Register </Link>
                    
                     {checkUser()}
             </ul>
+            
         
         </nav>
     )

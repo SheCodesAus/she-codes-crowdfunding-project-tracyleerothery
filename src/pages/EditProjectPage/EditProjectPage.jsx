@@ -26,7 +26,7 @@ function EditProjectPage(){
     }, []);
 
     if (!projectInfo) {
-        return <h1>Loading...</h1>
+        return <h1 className="pleaselogin">Loading...</h1>
     }
 
 
