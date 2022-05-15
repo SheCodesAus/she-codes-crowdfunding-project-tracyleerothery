@@ -5,6 +5,8 @@ import { useNavigate } from "react-router-dom";
 import '../../pages/forms.css';
 import '../../pages/styles.css';
 
+
+
 import { Link } from "react-router-dom";
 
 function RegisterForm() {
@@ -142,6 +144,15 @@ function RegisterForm() {
                 Create Account
             </button>
             </div>
+
+            
+            
+            
+
+     
+
+       
+      
 
 
 

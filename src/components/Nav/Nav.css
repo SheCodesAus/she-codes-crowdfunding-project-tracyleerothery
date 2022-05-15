@@ -107,14 +107,6 @@ a:active {
   color: #ffffff
 }
 
-footer {
-  font-family: var(--main-font);
-  text-align: center;
-  font-size: 16px;
-  padding: 20px;
-  background-color: #6b469a;
-  color: #fff;
-}
 
 .story_button2 {
   font-weight: bold;

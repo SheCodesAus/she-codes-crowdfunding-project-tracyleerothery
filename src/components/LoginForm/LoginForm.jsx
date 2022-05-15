@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+import Palslogo from "../../pages/HomePage/images/logo.png"
+
 // Styles
 
 import '../../pages/forms.css';
@@ -106,7 +108,18 @@ function LoginForm() {
 
     </form>
     </div>
+
+    <footer className="footerbottom">
+            <div><Link to="/"><img className="footer-logo" src={Palslogo}/></Link></div>
+            
+
+        </footer>
+
+        <footer className="footerbottom">
+            <p className="footer-item"> © 2022 All Pets</p>
+        </footer>
     </div>
+    
     );
 }
 
