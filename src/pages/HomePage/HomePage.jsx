@@ -31,10 +31,6 @@ function HomePage() {
 
     return (
         
-        
-          
-
-
         <div id="welcome-text">    
           
     <div className="hero-image">

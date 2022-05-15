@@ -83,7 +83,7 @@ function EditProfileForm({user}) {
     {
         id: "bio",
         label: "Bio",
-        placeholder: "Why you want to help pets!?",
+        placeholder: "Why you want to help a Pal!?",
         type: "text",
     },
     {

@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import '../../pages/forms.css';
 import '../../pages/styles.css';
 
+import { Link } from "react-router-dom";
 
 
 function LoginForm() {
@@ -55,6 +56,24 @@ function LoginForm() {
   };
 
   return (
+
+    <div>
+  <div id="welcome-text">    
+      
+  <div className="hero-image">
+  <div className="hero-text">
+    <h1>Log In</h1>
+                  {/* <p>
+                  <button className="cta"><Link  to="/">Home</Link></button>
+                  </p> */}
+                  
+    <h4>Welcome Back to Helping every Pal get ready for a new home.</h4> 
+    
+  </div>
+
+  
+  </div>
+  </div>
     
  
     <div className="form">
@@ -86,6 +105,7 @@ function LoginForm() {
       </div>
 
     </form>
+    </div>
     </div>
     );
 }

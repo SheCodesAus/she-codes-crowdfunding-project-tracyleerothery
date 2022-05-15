@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 // Imports
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 //styles
 import '../../pages/forms.css';
@@ -111,6 +112,25 @@ function ProjectForm(projectData) {
 ]
 
     return ( 
+      
+    <div>
+      <div id="welcome-text">    
+          
+      <div className="hero-image">
+      <div className="hero-text">
+        <h1>Upload a Pal</h1>
+                      {/* <p>
+                      <button className="cta"><Link  to="/projects/create/">SUPPORT A PAL</Link></button>
+                      </p> */}
+                      
+        <h4>Help a Pal. Register them below for support.</h4> 
+        
+      </div>
+  
+      
+      </div>
+      </div>
+
       <div className="form">
           <form className="login-form">
             {formFields.map((field, key) => {
@@ -134,12 +154,13 @@ function ProjectForm(projectData) {
             })}
             <div className="form-item">
             <button className="button1" type="submit" onClick={handleSubmit}>
-                Register A Pet
+                Register A Pal
             </button>
             </div>
 
         </form>
         </div>
+      </div>
         
     );
 }

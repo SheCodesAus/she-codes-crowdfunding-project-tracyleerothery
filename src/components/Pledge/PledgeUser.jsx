@@ -21,10 +21,11 @@ function PledgeUser({amount, supporter, comment}) {
 
     // Normal State
     return (
-            <li id="pledges-and-comments">
-                ${amount} from {supporterData.username} 
-                <br></br>"{comment}"
-            </li>    
+            <p id="pledges-and-comments">
+                ${amount} Support from {supporterData.username} <br></br>
+                <br></br> Message to Pal from {supporterData.username}: "{comment}"
+            </p>
+                
     );
 }
 

@@ -5,6 +5,8 @@ import { useNavigate } from "react-router-dom";
 import '../../pages/forms.css';
 import '../../pages/styles.css';
 
+import { Link } from "react-router-dom";
+
 function RegisterForm() {
     const [credentials, setCredentials] = useState({
         email: "",
@@ -52,9 +54,28 @@ function RegisterForm() {
 
 
     return (
+        <div>
+        <div>
+      <div id="welcome-text">    
+          
+      <div className="hero-image">
+      <div className="hero-text">
+        <h1>Register</h1>
+                      {/* <p>
+                      <button className="cta"><Link  to="/projects/create/">SUPPORT A PAL</Link></button>
+                      </p> */}
+                      
+        <h4>Join today to support a Pal.</h4> 
+        
+      </div>
+  
       
-         
-        <form className="login-form">
+      </div>
+      </div>
+
+
+    
+    <form className="login-form">
         <div className="form-item">
                 <label htmlFor="username">Username:</label>
                 <input
@@ -63,10 +84,10 @@ function RegisterForm() {
                     placeholder="Enter Username"
                     onChange={handleChange}
                 />
-            </div>
+        </div>
 
 
-            <div className="form-item">
+        <div className="form-item">
                 <label htmlFor="email">Email:</label>
                 <input
                     type="email"
@@ -74,9 +95,9 @@ function RegisterForm() {
                     placeholder="Enter Email"
                     onChange={handleChange}
                 />
-            </div>
+        </div>
 
-            <div className="form-item">
+        <div className="form-item">
                 <label htmlFor="first_name">First Name:</label>
                 <input
                     type="text"
@@ -124,10 +145,10 @@ function RegisterForm() {
 
 
 
-       </form>
-   
-    
-       );
+    </form>
+    </div>
+    </div>
+    );
 }
 
 export default RegisterForm;
