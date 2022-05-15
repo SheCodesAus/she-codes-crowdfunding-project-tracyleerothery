@@ -23,7 +23,7 @@ form {
 
 .form-item label {
   font-size: 17px;
-  color: #8246af;
+  color: #FFA300;
   padding: 10px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   letter-spacing: 1px;
@@ -37,13 +37,13 @@ form {
 
 .form-item input:hover,
 .form-item textarea:hover {
-  border: 2px solid #8246af;
+  border: 2px solid #FFA300;
 }
 
 .form-item input,
 .form-item textarea,
 .form-item button {
-  border: 2px solid #8246af;
+  border: 2px solid #FFA300;
   padding: 5px;
   font-size: 15px;
   background-color: white;
@@ -51,7 +51,7 @@ form {
 
 .form-item input,
 .form-item textarea {
-  color: #8246af;
+  color: #FFA300;
 }
 
 .form-item button {
@@ -63,11 +63,11 @@ form {
 
 .form-item button:hover {
   border: 2px solid rgb(255, 255, 255);
-  background-color: #8246af;
+  background-color: #FFA300;
   color: white;
 }
 
 .form-item button {
   width: 100px;
-  color: #8246af;
+  color: #FFA300;
 }

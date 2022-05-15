@@ -51,7 +51,7 @@ h3 {
 }
 
 .btn-medium {
-    background-color: #6b469a;
+    background-color: #FFA300;
 }
 
 .navbar {
@@ -92,7 +92,7 @@ h3 {
 
   /* Add a purple background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color:#8246af;
+    background-color:#FFA300;
     color: azure;
   }
   
@@ -118,7 +118,7 @@ h3 {
   
   /* Add a grey background color to dropdown links on hover */
   .dropdown-content a:hover {
-    background-color: #8246af;
+    background-color: #FFA300;
   }
   
   /* Show the dropdown menu on hover */
@@ -131,22 +131,22 @@ h3 {
 
 a:link {
   text-decoration: none;
-  color: #8246af
+  color: #FFA300
 }
 
 a:visited {
   text-decoration: none;
-  color: #8246af
+  color: #FFA300
 }
 
 a:hover {
   text-decoration: none;
-  color: #8246af
+  color: #FFA300
 }
 
 a:active {
   text-decoration: none;
-  color: #8246af
+  color: #FFA300
 }
 
 footer {
@@ -154,7 +154,7 @@ footer {
   text-align: center;
   font-size: 16px;
   padding: 20px;
-  background-color: #6b469a;
+  background-color: #FFA300;
   color: #fff;
 }
 
@@ -176,7 +176,7 @@ footer {
 }
 
 .story_button2 a:hover{
-  background-color: #8246af; 
+  background-color: #FFA300; 
   color: white;
   border: 2px solid #ffffff;
 }
