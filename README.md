@@ -1,3 +1,14 @@
+CrowdFunding Project - All Pets
+
+URL: https://glacial-brushlands-81525.herokuapp.com/
+
+Login: test_user Password: Password123
+
+
+**A website where you can donate money to animals in rescues around Perth, to help fund them to get ready for adoption. 
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
